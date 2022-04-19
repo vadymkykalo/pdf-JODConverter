@@ -1,0 +1,32 @@
+server:
+  port: 8081
+  
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+  application:
+    name: JODConverter Rest Api
+
+jodconverter:
+  local:
+    enabled: true
+    port-numbers: 2002,2003 # internal local port
+    format-options:
+      html:
+        store:
+          TEXT:
+            FilterOptions: EmbedImages
+
+      xhtml:
+        store:
+          TEXT:
+            FilterOptions: EmbedImages
+
+logging:
+  level:
+    org.jodconverter: debug
