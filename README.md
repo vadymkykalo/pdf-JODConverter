@@ -1,5 +1,8 @@
 ## PDF (JODConverter) Rest API
 
+This repository based on https://github.com/sbraconnier/jodconverter
+
+
 This is a sample application of a rest api that uses the spring boot integration module of the Java OpenDocument Converter (JODConverter) project to offer document conversion capabilities. The goal was to emulate a LibreOffice Online server that
 would support the customization of custom (known) load/store properties.
 
